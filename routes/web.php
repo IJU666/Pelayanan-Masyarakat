@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
+Route::get('/tanggapan', function () {
+    return view('admin.tanggapan', [
+        'title' => 'Pengaduan'
+    ]);
+});
+
+Route::get('/admin', function () {
+    return view('admin.pengaduan', [
+        'title' => 'Pengaduan'
+    ]);
+});
+
 Route::get('/masuk', function () {
     return view('auth.login');
 });

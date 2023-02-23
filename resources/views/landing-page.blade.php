@@ -32,14 +32,14 @@
         {{-- form --}}
         <div class="" style="margin-top: 12%;">
                 <h4 class="fw-semibold text-center">Sampaikan Laporan Anda</h4>
-                <div class="col-lg-1 mx-auto border-top border-3"></div>
+                <div class="col-lg-1 mx-auto border-top border-3 col-3"></div>
             <div class="col-lg-7 mt-5 py-4 rounded-3 mx-auto shadow-lg" style="background-color: #f5f5f5;">
                 <form action="" method="post">
                     <div class="col-lg-11 mx-auto">
 
                         <p class="fw-semibold col-lg-10 mx-auto">Klasifikasi Laporan</p>
-                        <div class="row col-lg-7 mx-auto">
-                        <div class="bg-white p-3 col-lg-5 rounded-3 me-3">
+                        <div class="row col-lg-7 col-10 mx-auto">
+                        <div class="bg-white p-3 col-lg-5 col-5 rounded-3 me-3">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -47,7 +47,7 @@
                             </label>
                           </div>
                         </div>
-                          <div class="bg-white col-lg-6 rounded-2 p-3">
+                          <div class="bg-white col-lg-6 col-6 rounded-2 p-3">
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
@@ -57,31 +57,31 @@
                         </div>
                     </div>
 
-                        <div class="form-floating my-3">
+                        <div class="form-floating my-3 col-11 mx-auto">
                             <textarea class="form-control" name="laporan" placeholder="Masukan disini" id="laporan" style="height: 120px"></textarea>
                             <label for="laporan">Masukan laporan anda disini</label>
                           </div>
 
                           <div class="row">
-                            <div class="col-lg-6 mb-3">
+                            <div class="col-lg-6 col-11 mx-auto mb-3">
                                 <label for="tgl" class="form-text">Masukan tanggal kejadian</label>
                                 <input type="date" name="tglkejadian" placeholder="Pilih tanggal kejadian" class="form-control"  id="tgl" class="">
                             </div>
-                            <div class="col-lg-6 mt-4">
+                            <div class="col-lg-6 mt-4 col-11 mx-auto mb-3">
                                 <input type="text" name="asal" id="" placeholder="Masukan Asal Kota Pelapor" class="form-control">
                             </div>
-                            <div class="form-floating col-lg-6">
+                            <div class="form-floating col-lg-6 col-11 mx-auto">
                                 <textarea name="alamat" id="alamat" cols="30" rows="10" class="form-control" placeholder="Alamat" style="height: 100px;"></textarea>
                                 <label for="alamat" class="ms-2">Masukan alamat lengkap kejadian</label>
                             </div>
-                            <div class=" col-lg-6">
+                            <div class=" col-lg-6 col-11 mx-auto">
                                 <label for="formFile" class="form-text">Masukan Lampiran</label>
                                 <input class="form-control" name="lampiran" type="file" id="formFile">
                                 <label for="formFile" class="form-text float-end">*format jpg, jpeg, dan png</label>
                               </div>
                           </div>
                           <div class="text-center mt-4">
-                          <button type="submit" class="btn btn-primary col-lg-5">Kirim</button>
+                          <button type="submit" class="btn btn-primary col-lg-5 col-10">Kirim</button>
                         </div>
                     </div>
                 </form>
