@@ -10,8 +10,8 @@
           <a class="nav-link fw-semibold" href="#">Pengaduan</a>
         </div>
         <div class="navbar-nav col-lg-5 justify-content-end">
-          <a class="btn fw-semibold" href="#">Masuk</a>
-          <a class="btn btn-primary fw-semibold" href="#">Daftar</a>
+          <a class="btn fw-semibold" href="{{ 'masuk' }}">Masuk</a>
+          <a class="btn btn-primary fw-semibold" href="{{ 'daftar' }}">Daftar</a>
         </div>
       </div>
     </div>

@@ -1,21 +1,66 @@
+@extends('layout.layout')
+@section('bebas')
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
+
         </x-slot>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
-            <!-- Email Address -->
+            {{-- Email --}}
+            <div class="bg-white col-lg-6 p-5 my-5 rounded-3 mx-auto shadow-lg">
+                <div class="row">
+                    <div class="fw-semibold fs-4 col-lg-6">
+                        Freedom
+                    </div>
+                    <div class="col-lg-6 my-auto text-end">
+                        Belum mempunyai akun? <a href="{{ 'daftar' }}" class="text-decoration-none">Daftar</a>
+                    </div>
+                </div>
+                <div class="fs-3 mt-5 fw-semibold text-center">
+                    Selamat Datang
+                </div>
+                                                <!-- Session Status -->
+                <x-auth-session-status class="mb-4" :status="session('status')" />
+
+                <!-- Validation Errors -->
+                <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                <div class="col-lg-7 mt-5 mx-auto">
+                {{-- email --}}
+                <div class="form-floating mb-3">
+                    <input type="email" id="email" name="email" placeholder="email" class="form-control"  :value="old('email')">
+                    <label for="email" class="form-">Masukan Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" name="password" id="pass" class="form-control" placeholder="Kata Sandi" required autocomplete="current-password">
+                    <label for="pass">Masukan Kata Sandi</label>
+                </div>
+                <div class="row ms-1">
+                <div class="form-check col-lg-5 ">
+                    <input class="form-check-input " name="remember" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Ingat Saya
+                    </label>
+                  </div>
+                  <div class="col-lg-7 text-end mb-3">
+                    @if (Route::has('password.request'))
+                    <a class="text-decoration-none" href="{{ route('password.request') }}">
+                        {{ __('Lupa kata sandi?') }}
+                    </a>
+                @endif
+                  </div>
+                  <div class="text-center mt-4  ">
+                    <button type="submit" class="btn btn-primary col-lg-8">Masuk</button>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+            {{-- <!-- Email Address -->
             <div>
                 <x-label for="email" :value="__('Email')" />
 
@@ -50,7 +95,9 @@
                 <x-button class="ml-3">
                     {{ __('Log in') }}
                 </x-button>
-            </div>
+            </div> --}}
         </form>
     </x-auth-card>
 </x-guest-layout>
+
+@endsection

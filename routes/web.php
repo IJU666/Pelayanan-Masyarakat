@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('landing-page');
 });
 
+Route::get('/masuk', function () {
+    return view('auth.login');
+});
+
+Route::get('/daftar', function () {
+    return view('auth.register');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
