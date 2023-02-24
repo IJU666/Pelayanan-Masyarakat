@@ -1,20 +1,5 @@
 @extends('layout.layout-admin')
 @section('bebas')
-<div id="app">
-    @include('admin.sidebar')
-</div>
-    </div>
-    <div id="main">
-        <header class="mb-3">
-            <a href="#" class="burger-btn d-block d-xl-none">
-                <i class="bi bi-justify fs-3"></i>
-            </a>
-        </header>
-
-<div class="page-heading">
-<h3>Tabel Data Pengaduan</h3>
-</div>
-<div class="page-content bg-white p-3 rounded-3 shadow-lg">
     <div class="overflow-x-auto">
     <table class="table table-striped rounded-2">
         <th>No</th>
@@ -70,7 +55,7 @@
         {{-- useless --}}
     </table>
 </div>
-</div>
+
 
         <footer>
             <div class="footer clearfix mb-0 text-muted">

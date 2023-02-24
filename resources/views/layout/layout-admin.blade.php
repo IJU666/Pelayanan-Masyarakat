@@ -13,7 +13,23 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    @yield('bebas')
+    <div id="app">
+        @include('admin.sidebar')
+    </div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+    <div class="page-heading">
+    <h3>{{ $judul }}</h3>
+    </div>
+    <div class="page-content bg-white p-3 rounded-3 shadow-lg">
+        @yield('bebas')
+    </div>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
   </body>
 </html>

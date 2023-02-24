@@ -1,20 +1,5 @@
 @extends('layout.layout-admin')
 @section('bebas')
-<div id="app">
-    @include('admin.sidebar')
-</div>
-    </div>
-    <div id="main">
-        <header class="mb-3">
-            <a href="#" class="burger-btn d-block d-xl-none">
-                <i class="bi bi-justify fs-3"></i>
-            </a>
-        </header>
-
-<div class="page-heading">
-<h3>Form Tanggapan</h3>
-</div>
-<div class="page-content bg-white p-3 col-lg-8 mx-auto rounded-3 shadow-lg">
     <form action="" method="post">
         <div class="col-lg-10 mb-3 mx-auto">
             <div class="form-floating">
@@ -32,5 +17,5 @@
             <button type="submit" class="btn btn-primary col-lg-4">Kirim</button>
         </div>
     </form>
-</div>
+
 @endsection

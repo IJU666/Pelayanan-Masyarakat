@@ -19,13 +19,22 @@ Route::get('/', function () {
 
 Route::get('/tanggapan', function () {
     return view('admin.tanggapan', [
-        'title' => 'Pengaduan'
+        'title' => 'Pengaduan',
+        'judul' => 'Form Tanggapan'
     ]);
 });
 
-Route::get('/admin', function () {
+Route::get('/pengaduan', function () {
     return view('admin.pengaduan', [
-        'title' => 'Pengaduan'
+        'title' => 'Pengaduan',
+        'judul' => 'Tabel Data Pengaduan'
+    ]);
+});
+
+Route::get('/pengguna', function () {
+    return view('admin.pengguna', [
+        'title' => 'Pengguna',
+        'judul' => 'Tabel Data Pengguna'
     ]);
 });
 
