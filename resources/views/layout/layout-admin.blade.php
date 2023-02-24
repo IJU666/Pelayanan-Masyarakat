@@ -27,9 +27,9 @@
     <div class="page-heading">
     <h3>{{ $judul }}</h3>
     </div>
-    <div class="page-content bg-white p-3 rounded-3 shadow-lg">
+
         @yield('bebas')
-    </div>
+
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
   </body>
 </html>

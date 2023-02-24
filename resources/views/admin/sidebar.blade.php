@@ -29,8 +29,8 @@
         </a>
     </li>
     <li
-    class="sidebar-item  ">
-    <a href="index.html" class='sidebar-link'>
+    class="sidebar-item {{ ($title === 'Hasil') ? 'active' : '' }} ">
+    <a href="{{ 'hasil' }}" class='sidebar-link'>
         <i class="fa-solid fa-check"></i>
         <span>Hasil Pengaduan</span>
     </a>

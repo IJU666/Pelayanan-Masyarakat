@@ -24,10 +24,24 @@ Route::get('/tanggapan', function () {
     ]);
 });
 
+Route::get('/tambah', function () {
+    return view('admin.tambah-pengguna', [
+        'title' => 'Pengguna',
+        'judul' => 'Tambah Pengguna'
+    ]);
+});
+
 Route::get('/pengaduan', function () {
     return view('admin.pengaduan', [
         'title' => 'Pengaduan',
         'judul' => 'Tabel Data Pengaduan'
+    ]);
+});
+
+Route::get('/hasil', function () {
+    return view('admin.hasil-pengaduan', [
+        'title' => 'Hasil',
+        'judul' => 'Hasil Pengaduan'
     ]);
 });
 
