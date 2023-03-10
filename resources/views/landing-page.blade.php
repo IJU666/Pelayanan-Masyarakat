@@ -10,17 +10,17 @@
                 <h3 class="fw-bold ">F R E E D O M</h3>
                 <div class="fs-5 fw-semibold ">Layanan Aspirasi <br> dan Pengaduan Masyarakat
                 <p class="fs-6 text-secondary">Berani Melapor!</p>
-                <a href="" class="btn btn-primary col-5">Mulai</a>
+                <a href="#tentang" class="btn btn-primary col-5">Mulai</a>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 13%;">
-            <div class="row ">
+        <div class="container" id="tentang" style="margin-top: 13%;">
+            <div class="row" >
                 <div class="col-lg-6 align-self-center">
                     <div class="col-lg-8 float-end">
                     <h3 class="fw-semibold">Apa itu <br> Freedom?</h3>
                     <p>Freedom adalah suatu website pelayanan masyarakat untuk membantu masyarakat menyampaikan aspirasi ataupun pengaduan kepada suatu lembaga berwenang.</p>
-                    <a href="" class="btn btn-primary">Lapor Sekarang</a>
+                    <a href="#lapor" class="btn btn-primary">Lapor Sekarang</a>
                 </div>
                 </div>
                 <div class="col-lg-6 ">
@@ -30,7 +30,7 @@
         </div>
 
         {{-- form --}}
-        <div class="" style="margin-top: 12%;">
+        <div class="" id="lapor" style="margin-top: 12%;">
                 <h4 class="fw-semibold text-center">Sampaikan Laporan Anda</h4>
                 <div class="col-lg-1 mx-auto border-top border-3 col-3"></div>
             <div class="col-lg-7 mt-5 py-4 rounded-3 mx-auto shadow-lg" style="background-color: #f5f5f5;">

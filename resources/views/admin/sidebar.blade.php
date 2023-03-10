@@ -11,7 +11,7 @@
 </div>
 </div>
 <div class="sidebar-menu">
-<ul class="menu">
+<ul class="menu" style="height: 65vh;">
     <li class="sidebar-title">Menu</li>
 
     <li
@@ -35,4 +35,25 @@
         <span>Hasil Pengaduan</span>
     </a>
 </li>
+</ul>
+{{-- <div class="sidebar-item"> --}}
+<ul class="menu float-bottom">
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+
+        <x-responsive-nav-link :href="route('logout')"
+                onclick="event.preventDefault();
+                            this.closest('form').submit();">
+                            <li class="sidebar-item">
+                            <li class="sidebar-link">
+                        <i class="fa-solid fa-door-open"></i>
+                <span class="">
+            {{ __('Keluar') }}
+        </span>
+            </li>
+        </x-responsive-nav-link>
+    </form>
+        </li>
+</ul>
+{{-- </div>  --}}
 </div>

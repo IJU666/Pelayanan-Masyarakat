@@ -16,7 +16,6 @@
     <div id="app">
         @include('admin.sidebar')
     </div>
-        </div>
         <div id="main">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
@@ -30,6 +29,8 @@
 
         @yield('bebas')
 
+        @include('admin.footer')
+        </div>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
   </body>
 </html>
